@@ -88,17 +88,17 @@ while True:
         print(Id[0])
         # Check the ID if exist 
         if(Id[0] == 1):
-            Id = "Jenifer"                                   
+            Id = "Amparo"                                   
             if(estadoServo == 0):
                 estadoServo = 1 - estadoServo                               
                 executor.submit(moveServo)
                 
         elif(Id[0] == 2):
-            Id = "Carlos"
-            
-        elif(Id[0] == 3):
-            Id = "Scarlett"
-            
+            Id = "Bety"
+            if(estadoServo == 0):
+                estadoServo = 1 - estadoServo                               
+                executor.submit(moveServo)
+                                                    
         #If not exist, then it is Unknown
         else:            
             Id = "Desconocido"            
